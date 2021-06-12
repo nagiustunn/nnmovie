@@ -65,6 +65,8 @@
  ## EXPLANATION
  
  If there is an admin already registered in the system, that is, the user table is full and you want to log into the system with the information here, it will not see your password as bcrypt. Because of this, you will not be able to login to the system, an error will occur. If you run the part called EncodedPassword.java, it will give you your password as encrypted and bcrypt.
+ 
+ Since I had a little trouble adding the css parts with thymeleaf, some items in the header approached the logo, and some pages did not fully understand the css part, so I styled some parts of the HTML pages with style.
 
 ## MySQL Insert
 
