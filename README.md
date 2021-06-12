@@ -3,6 +3,7 @@
  
 ## MODULES
  User Module, Admin Module
+ 
   The user module will only be able to see the movies registered in the system and the details of these movies. The admin module, on the other hand, will be able to see the movies recorded in the system as well as delete and update these movies. He can add a new movie if he/she wants.
 
 ## TECHNOLOGY USED
