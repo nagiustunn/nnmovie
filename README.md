@@ -33,7 +33,7 @@
 
 *USER MOVIE INFO
 
-![](screenshots/user_movie_home.png)
+![](screenshots/user_movie_info.png)
 
 *LOGIN
 
