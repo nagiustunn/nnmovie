@@ -70,7 +70,7 @@
 
 ## MySQL Insert
 
-After we have created your tables with MySQL, you can manually add users, administrators and movies, or you can add the information in the MySQL_insert file to your system with a query.
+After we have created your tables with MySQL, you can manually add users, administrators and movies, or you can add the information in the MySQL_Insert file to your system with a query.
 
 ## PROJECT RUN COMMAND
 
