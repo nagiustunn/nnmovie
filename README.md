@@ -73,7 +73,11 @@ After we have created your tables with MySQL, you can manually add users, admini
 ## PROJECT RUN COMMAND
 
 *download zip forder
+
 *unzip and open folder with netbeans/eclipse ide
+
 *create a database name moviecollection in mySQL
+
 *clean and build folder
+
 *finaly run maven Goals
