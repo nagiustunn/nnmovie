@@ -1,0 +1,18 @@
+@charset "ISO-8859-1";
+
+div.card{
+  	margin: auto;
+  	width: 50%;
+  	top:70%;
+	border: 1px solid black;
+	padding: 5px;
+}
+
+.img{
+	width: 15%;
+    height: 15%;;
+}
+
+.footer{
+	width:50%;
+}
