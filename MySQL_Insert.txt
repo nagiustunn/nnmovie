@@ -1,0 +1,14 @@
+### MOVIE TABLOSUNA INSERT
+
+INSERT INTO `movie` (`id`, `description`, `image_path`, `language`, `name`, `pub_year`, `type`, `actor_actrees_id`, `actor_actress`) VALUES
+(1, 'An orphaned boy enrolls in a school of wizardry, where he learns the truth about himself, his family and the terrible evil that haunts the magical world.', 'https://upload.wikimedia.org/wikipedia/tr/c/c1/Harrypotter1filmposter.jpg', 'English', 'Harry Potter And The Philosopher\'s Stone', '2001-11-16 00:00:00', 'Fantastic', NULL, 'Richard Harris,Maggie Smith,Daniel Radcliffe'),
+(2, 'Tyler Rake, a fearless black market mercenary, embarks on the most deadly extraction of his career when he\'s enlisted to rescue the kidnapped son of an imprisoned international crime lord.', 'https://m.media-amazon.com/images/M/MV5BNDBkOWNiMTYtMjlkZS00NzJlLTg0ZmUtN2YwYWQ3N2I3N2Y0XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg', 'English', 'Extraction', '2020-04-24 00:00:00', 'Action', NULL, ' Chris Hemsworth, Bryon Lerum, Ryder Lerum'),
+(3, 'Sparks fly when spirited Elizabeth Bennet meets single, rich, and proud Mr. Darcy. But Mr. Darcy reluctantly finds himself falling in love with a woman beneath his class. Can each overcome their own pride and prejudice?', 'https://m.media-amazon.com/images/M/MV5BMTA1NDQ3NTcyOTNeQTJeQWpwZ15BbWU3MDA0MzA4MzE@._V1_.jpg', 'English', 'Pride & Prejudice', '2006-02-03 00:00:00', 'Romance', NULL, ' Keira Knightley, Matthew Macfadyen, Brenda Blethyn'),
+(4, 'A team of explorers travel through a wormhole in space in an attempt to ensure humanity\'s survival.', 'https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg', 'English', 'Interstellar', '2014-11-07 00:00:00', 'Science Fiction', NULL, ' Matthew McConaughey, Anne Hathaway, Jessica Chastain'),
+(5, 'Receiving important news about her father, whom she has not met for years, Nisan returns to her father\'s house with her husband and daughter. There are strange things happening in this mansion where she escaped away years ago. What is happening in the man', 'https://lh3.googleusercontent.com/proxy/ZlyLaOPE-ywibVRbNDSD0oBE4SSlze0RJ9aMQUR6ibaa3NWB35RZ-pfbxnXcm2Y_lwKaPh__5L8gOcnLJytVYYKh5cSDQmnl-azyOk94KXfm0JENbS_4snDOT13EzJbmEDNTd-wYNg', 'Turkish', 'Güzelliğin Portresi', '2019-12-13 00:00:00', 'Horror', NULL, ' Burçin Terzioğlu, Birkan Sokullu, Serkan Keskin');
+
+********************************************************************************
+### USER TABLOSUNA INSERT
+
+INSERT INTO `user` (`id`, `epost`, `name`, `password`, `surname`) VALUES
+(1, 'nagiustunn@gmail.com', 'Nagihan ', '$2a$10$vuPawBQXeNB2mESo8O9gyOV7Ui69aW/1ovP5T2GfJMKxo/eZvwv/O', 'Ustun');
