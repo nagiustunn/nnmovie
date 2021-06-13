@@ -4,14 +4,17 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.moviecollection.moviecollection.models.Movie;
+import com.moviecollection.moviecollection.repositories.MovieRepository;
 import com.moviecollection.moviecollection.services.MovieService;
 
 @Controller
@@ -19,6 +22,9 @@ public class MovieController {
 
 	@Autowired
 	private MovieService movieService;
+	
+	@Autowired
+	private MovieRepository movieRepository;
 	
 	@GetMapping("/movies")
 	public String getAllMovies(Model model, String keyword) {
@@ -63,11 +69,16 @@ public class MovieController {
 		return "create_movie";
 	}
 	
-	@RequestMapping(value = "/save", method = RequestMethod.POST)
-	public String saveMovie(@ModelAttribute("movie") Movie movie) {
-	    movieService.createMovie(movie);
+	@PostMapping("/saveMovie")
+	public String saveMovie(Movie movie,  BindingResult result, Model model) {
+		
+		 if (result.hasErrors()) {
+	            return "create_movie";
+	        }
+		
+	  movieRepository.save(movie);
 	     
-	    return "redirect:/";
+	    return "movie_success";
 	}
 	
 	@GetMapping("/updateMovie/{id}")
